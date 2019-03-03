@@ -25,6 +25,11 @@ ShoppingList.create('beans', 2);
 ShoppingList.create('tomatoes', 3);
 ShoppingList.create('peppers', 4);
 
+Recipes.create(
+  'pancake', ['1 cup milk', '1 cup flour', 'two eggs', '1tsp baking soda']);
+Recipes.create(
+  'smoothie', ['2 bananas', '1 bunch of kale', '1 cup water', '1 cup frozen berries']);
+
 // when the root of this route is called with GET, return
 // all current ShoppingList items by calling `ShoppingList.get()`
 app.get('/shopping-list', (req, res) => {
